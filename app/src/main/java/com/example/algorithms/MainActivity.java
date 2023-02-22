@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         findButtons();
         divisibleByFive();
         minutesIntoSeconds();
+        findDiscount();
     }
 
     private void findButtons() {
@@ -29,12 +30,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void divisibleByFive() {
-        Intent intent = new Intent(this, DivisibleByFiveActivity.class);
-        startActivity(intent);
+        binding.divisibleButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, DivisibleByFiveActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void minutesIntoSeconds() {
-        Intent intent = new Intent(this, ConvertsMinutesToSecondsActivity.class);
-        startActivity(intent);
+        binding.minutesButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ConvertsMinutesToSecondsActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void findDiscount() {
+        binding.discount.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FindTheDiscountActivity.class);
+            startActivity(intent);
+        });
     }
 }
