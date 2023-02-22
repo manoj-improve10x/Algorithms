@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         findButtons();
+        divisibleByFive();
     }
 
     private void findButtons() {
@@ -24,5 +25,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this,FizzBuzzActivity.class);
             startActivity(intent);
         });
+    }
+
+    private void divisibleByFive() {
+        Intent intent = new Intent(this, DivisibleByFiveActivity.class);
+        startActivity(intent);
     }
 }
