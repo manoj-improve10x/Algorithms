@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         findButtons();
         divisibleByFive();
+        minutesIntoSeconds();
     }
 
     private void findButtons() {
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void divisibleByFive() {
         Intent intent = new Intent(this, DivisibleByFiveActivity.class);
+        startActivity(intent);
+    }
+
+    private void minutesIntoSeconds() {
+        Intent intent = new Intent(this, ConvertsMinutesToSecondsActivity.class);
         startActivity(intent);
     }
 }
