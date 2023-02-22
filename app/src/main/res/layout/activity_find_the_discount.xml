@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindTheDiscountActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original Price"
+        android:textAllCaps="false"
+        android:textColor="#070707"
+        app:layout_constraintBottom_toTopOf="@+id/original_price"
+        app:layout_constraintEnd_toEndOf="@+id/original_price"
+        app:layout_constraintStart_toStartOf="@+id/original_price"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount"
+        android:textAllCaps="false"
+        android:textColor="#0C0C0C"
+        app:layout_constraintBottom_toTopOf="@+id/discount_pers"
+        app:layout_constraintEnd_toEndOf="@+id/discount_pers"
+        app:layout_constraintStart_toStartOf="@+id/discount_pers"
+        app:layout_constraintTop_toBottomOf="@+id/original_price" />
+
+    <EditText
+        android:id="@+id/original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/discount_pers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/submit_button"
+        app:layout_constraintEnd_toEndOf="@+id/submit_button"
+        app:layout_constraintStart_toStartOf="@+id/submit_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discount_pers" />
+</androidx.constraintlayout.widget.ConstraintLayout>
