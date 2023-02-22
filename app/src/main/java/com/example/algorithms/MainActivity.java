@@ -16,36 +16,52 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        findButtons();
-        divisibleByFive();
-        minutesIntoSeconds();
-        findDiscount();
+        handleFizzBuzzBtn();
+        handleDivisibleByFive();
+        handleMinutesIntoSeconds();
+        handleFindDiscount();
+        handleLessThenHundred();
+        handleIntegerRange();
     }
 
-    private void findButtons() {
+    private void handleFizzBuzzBtn() {
         binding.fizzBuzz.setOnClickListener(view -> {
             Intent intent = new Intent(this,FizzBuzzActivity.class);
             startActivity(intent);
         });
     }
 
-    private void divisibleByFive() {
+    private void handleDivisibleByFive() {
         binding.divisibleButton.setOnClickListener(v -> {
             Intent intent = new Intent(this, DivisibleByFiveActivity.class);
             startActivity(intent);
         });
     }
 
-    private void minutesIntoSeconds() {
+    private void handleMinutesIntoSeconds() {
         binding.minutesButton.setOnClickListener(v -> {
             Intent intent = new Intent(this, ConvertsMinutesToSecondsActivity.class);
             startActivity(intent);
         });
     }
 
-    private void findDiscount() {
+    private void handleFindDiscount() {
         binding.discount.setOnClickListener(v -> {
             Intent intent = new Intent(this, FindTheDiscountActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleLessThenHundred() {
+        binding.lessThenHundred.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LessThenHundredActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleIntegerRange() {
+        binding.integerRangeBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, IntegerInRangeActivity.class);
             startActivity(intent);
         });
     }

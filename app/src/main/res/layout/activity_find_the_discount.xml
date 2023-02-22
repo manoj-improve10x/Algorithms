@@ -10,11 +10,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:text="Original Price"
         android:textAllCaps="false"
         android:textColor="#070707"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread" />
@@ -27,7 +27,6 @@
         android:text="Discount"
         android:textAllCaps="false"
         android:textColor="#0C0C0C"
-        app:layout_constraintEnd_toEndOf="@+id/original_price"
         app:layout_constraintStart_toStartOf="@+id/original_price"
         app:layout_constraintTop_toBottomOf="@+id/original_price" />
 
@@ -38,7 +37,6 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -49,7 +47,6 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -60,7 +57,7 @@
         android:text="Submit Button"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/discount_pers"
-        app:layout_constraintStart_toStartOf="@+id/discount_pers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/discount_pers" />
 </androidx.constraintlayout.widget.ConstraintLayout>
