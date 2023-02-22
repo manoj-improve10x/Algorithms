@@ -24,15 +24,24 @@ public class FizzBuzzActivity extends AppCompatActivity {
         binding.checkButton.setOnClickListener(v -> {
            String num = binding.numberTxt.getText().toString();
            int number = Integer.valueOf(num);
-           if(number%3==0 && number%5==0){
-               Toast.makeText(this, "FizzBuzz", Toast.LENGTH_SHORT).show();
-           } else if (number%3==0){
-               Toast.makeText(this, "Fizz", Toast.LENGTH_LONG).show();
-           } else if(number%5==0){
-               Toast.makeText(this, "Buzz", Toast.LENGTH_LONG).show();
-           }else {
-               Toast.makeText(this, String.valueOf(number), Toast.LENGTH_SHORT).show();
-           }
+           String name = findFizzBuzz(number);
+            Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+
         });
+    }
+
+    private static String findFizzBuzz(int number) {
+        String result = "name";
+        if (number % 3 == 0 && number % 5 == 0) {
+            result = "FizzBuzz";
+        } else if (number % 3 == 0) {
+            result = "Fizz";
+        } else if (number % 5 == 0) {
+            result = "Buzz";
+        } else {
+            result = Integer.toString(number);
+        }
+        System.out.println(result);
+        return result;
     }
 }

@@ -22,7 +22,7 @@ public class DivisibleByFiveActivity extends AppCompatActivity {
         binding.checkButton.setOnClickListener(v -> {
             String inputNumber = binding.inputNumberTxt.getText().toString();
             int number = Integer.parseInt(inputNumber);
-            if(number % 5 == 0){
+            if(number / 5 == 0){
                 binding.outputTxt.setText("the number is divisible by five");
             }else {
                 binding.outputTxt.setText("the number is not divisible by five");
