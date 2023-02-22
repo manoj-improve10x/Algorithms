@@ -3,6 +3,7 @@ package com.example.algorithms;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.algorithms.databinding.ActivityDivisibleByFiveBinding;
 
@@ -22,11 +23,17 @@ public class DivisibleByFiveActivity extends AppCompatActivity {
         binding.checkButton.setOnClickListener(v -> {
             String inputNumber = binding.inputNumberTxt.getText().toString();
             int number = Integer.parseInt(inputNumber);
-            if(number / 5 == 0){
-                binding.outputTxt.setText("the number is divisible by five");
-            }else {
-                binding.outputTxt.setText("the number is not divisible by five");
-            }
+            boolean result = isDivisibleByFive(number);
+            binding.outputTxt.setText(String.valueOf(result));
         });
+    }
+
+    private static boolean isDivisibleByFive(int num) {
+        boolean result = false;
+        if (num % 5 == 0) {
+            result = true;
+        }
+        System.out.println(result);
+        return result;
     }
 }
