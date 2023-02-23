@@ -65,4 +65,14 @@
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@+id/less_then_hundred"
         app:layout_constraintTop_toBottomOf="@+id/less_then_hundred" />
+
+    <Button
+        android:id="@+id/equality_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="EqualityThreeValues"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/integer_range_btn"
+        app:layout_constraintTop_toBottomOf="@+id/integer_range_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
