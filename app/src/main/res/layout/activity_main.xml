@@ -85,4 +85,14 @@
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@+id/equality_button"
         app:layout_constraintTop_toBottomOf="@+id/equality_button" />
+
+    <Button
+        android:id="@+id/find_sentence_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Find Sentence"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/three_programmers_btn"
+        app:layout_constraintTop_toBottomOf="@+id/three_programmers_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

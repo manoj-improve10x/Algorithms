@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         handleIntegerRange();
         handleEqualityBtn();
         handleThreeProgrammersBtn();
+        findSentenceBtn();
     }
 
     private void handleFizzBuzzBtn() {
@@ -80,5 +81,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, ThreeProgrammersActivity.class);
             startActivity(intent);
         });
+    }
+
+    private void findSentenceBtn() {
+        Intent intent = new Intent(this, FindSentenceActivity.class);
+        startActivity(intent);
     }
 }
