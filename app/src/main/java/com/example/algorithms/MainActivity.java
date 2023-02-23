@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         handleThreeProgrammersBtn();
         findSentenceBtn();
         handleEvenNumberBtn();
+        twoMakesTen();
     }
 
     private void handleFizzBuzzBtn() {
@@ -94,6 +95,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleEvenNumberBtn() {
         binding.evenNumberBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, EvenNumberActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void twoMakesTen() {
+        binding.twoMakesTenBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TwoMakesTenActivity.class);
             startActivity(intent);
         });
     }
