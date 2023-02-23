@@ -75,4 +75,14 @@
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@+id/integer_range_btn"
         app:layout_constraintTop_toBottomOf="@+id/integer_range_btn" />
+
+    <Button
+        android:id="@+id/three_programmers_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Three Programmers"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/equality_button"
+        app:layout_constraintTop_toBottomOf="@+id/equality_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         handleLessThenHundred();
         handleIntegerRange();
         handleEqualityBtn();
+        handleThreeProgrammersBtn();
     }
 
     private void handleFizzBuzzBtn() {
@@ -70,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleEqualityBtn() {
         binding.equalityButton.setOnClickListener(v -> {
             Intent intent = new Intent(this, EqualityOfThreeValuesActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleThreeProgrammersBtn() {
+        binding.threeProgrammersBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ThreeProgrammersActivity.class);
             startActivity(intent);
         });
     }
