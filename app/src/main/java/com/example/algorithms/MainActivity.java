@@ -85,12 +85,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void findSentenceBtn() {
-        Intent intent = new Intent(this, FindSentenceActivity.class);
-        startActivity(intent);
+        binding.findSentenceBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FindSentenceActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void handleEvenNumberBtn() {
-        Intent intent = new Intent(this, EvenNumberActivity.class);
-        startActivity(intent);
+        binding.evenNumberBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, EvenNumberActivity.class);
+            startActivity(intent);
+        });
     }
 }
