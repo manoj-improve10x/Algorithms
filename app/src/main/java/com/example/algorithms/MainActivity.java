@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         handleEqualityBtn();
         handleThreeProgrammersBtn();
         findSentenceBtn();
+        handleEvenNumberBtn();
     }
 
     private void handleFizzBuzzBtn() {
@@ -85,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void findSentenceBtn() {
         Intent intent = new Intent(this, FindSentenceActivity.class);
+        startActivity(intent);
+    }
+
+    private void handleEvenNumberBtn() {
+        Intent intent = new Intent(this, EvenNumberActivity.class);
         startActivity(intent);
     }
 }
