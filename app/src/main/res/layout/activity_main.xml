@@ -116,6 +116,13 @@
                 android:layout_height="wrap_content"
                 android:text="HoursIntoSeconds"
                 android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/word_count_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Word Count"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 

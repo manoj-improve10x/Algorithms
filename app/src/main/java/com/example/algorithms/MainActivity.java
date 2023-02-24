@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         handleEvenNumberBtn();
         twoMakesTen();
         convertHoursIntoSeconds();
+        getWordCount();
     }
 
     private void handleFizzBuzzBtn() {
@@ -110,6 +111,13 @@ public class MainActivity extends AppCompatActivity {
     private void convertHoursIntoSeconds() {
         binding.hoursIntoSecondsBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, ConvertHoursToSecondsActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void getWordCount() {
+        binding.wordCountBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, GetWordCountActivity.class);
             startActivity(intent);
         });
     }
