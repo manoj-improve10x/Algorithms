@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         convertHoursIntoSeconds();
         getWordCount();
         getReverseOrder();
+        getShuffleName();
     }
 
     private void handleFizzBuzzBtn() {
@@ -126,6 +127,13 @@ public class MainActivity extends AppCompatActivity {
     private void getReverseOrder() {
         binding.reverseStringBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, ReverseOrderActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void getShuffleName() {
+        binding.shuffleNameBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ShuffleNameActivity.class);
             startActivity(intent);
         });
     }
