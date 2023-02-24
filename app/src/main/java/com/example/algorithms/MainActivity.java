@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         twoMakesTen();
         convertHoursIntoSeconds();
         getWordCount();
+        getReverseOrder();
     }
 
     private void handleFizzBuzzBtn() {
@@ -118,6 +119,13 @@ public class MainActivity extends AppCompatActivity {
     private void getWordCount() {
         binding.wordCountBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, GetWordCountActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void getReverseOrder() {
+        binding.reverseStringBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ReverseOrderActivity.class);
             startActivity(intent);
         });
     }
