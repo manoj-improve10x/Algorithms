@@ -6,114 +6,117 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/fizz_buzz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="FizzBuzz"
-        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/divisible_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Divisible By Five"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/fizz_buzz"
-        app:layout_constraintTop_toBottomOf="@+id/fizz_buzz" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/minutes_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="minutes into seconds"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/divisible_button"
-        app:layout_constraintTop_toBottomOf="@+id/divisible_button" />
+            <Button
+                android:id="@+id/fizz_buzz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="FizzBuzz"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/discount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Discount"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/minutes_button"
-        app:layout_constraintTop_toBottomOf="@+id/minutes_button" />
+            <Button
+                android:id="@+id/divisible_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Divisible By Five"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/less_then_hundred"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Less Then Hundred"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/discount"
-        app:layout_constraintTop_toBottomOf="@+id/discount" />
+            <Button
+                android:id="@+id/minutes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="minutes into seconds"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/integer_range_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Integer Range"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/less_then_hundred"
-        app:layout_constraintTop_toBottomOf="@+id/less_then_hundred" />
+            <Button
+                android:id="@+id/discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Discount"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/equality_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="EqualityThreeValues"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/integer_range_btn"
-        app:layout_constraintTop_toBottomOf="@+id/integer_range_btn" />
+            <Button
+                android:id="@+id/less_then_hundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Less Then Hundred"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/three_programmers_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Three Programmers"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/equality_button"
-        app:layout_constraintTop_toBottomOf="@+id/equality_button" />
+            <Button
+                android:id="@+id/integer_range_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Integer Range"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/find_sentence_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Find Sentence"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/three_programmers_btn"
-        app:layout_constraintTop_toBottomOf="@+id/three_programmers_btn" />
+            <Button
+                android:id="@+id/equality_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="EqualityThreeValues"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/even_number_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:text="Even Number"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/find_sentence_btn"
-        app:layout_constraintTop_toBottomOf="@+id/find_sentence_btn" />
+            <Button
+                android:id="@+id/three_programmers_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Three Programmers"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/two_makes_ten_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="MakesTwoTen"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="@+id/even_number_btn"
-        app:layout_constraintTop_toBottomOf="@+id/even_number_btn" />
+            <Button
+                android:id="@+id/find_sentence_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Find Sentence"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/even_number_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:text="Even Number"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/two_makes_ten_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="MakesTwoTen"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/hours_into_seconds_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HoursIntoSeconds"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         findSentenceBtn();
         handleEvenNumberBtn();
         twoMakesTen();
+        convertHoursIntoSeconds();
     }
 
     private void handleFizzBuzzBtn() {
@@ -102,6 +103,13 @@ public class MainActivity extends AppCompatActivity {
     private void twoMakesTen() {
         binding.twoMakesTenBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, TwoMakesTenActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void convertHoursIntoSeconds() {
+        binding.hoursIntoSecondsBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ConvertHoursToSecondsActivity.class);
             startActivity(intent);
         });
     }
